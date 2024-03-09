@@ -4,7 +4,7 @@
   <head>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, user-scalable=no" />
-      <title>Amy&#x27;s Art Page - Home</title>
+      <title>Amy&#x27;s Art - Home</title>
       <link rel="stylesheet" href="public/lightgallery/css/lightgallery.css" />
       <link rel="stylesheet" href="public/lightgallery/css/lg-exif.min.css" />
       <link rel="stylesheet" href="public/videojs/video-js.min.css" />
@@ -14,82 +14,101 @@
 
   <body>
 
-    <header>
-      <a href="index.html">
-        <h1>Amy&#x27;s Art Page</h1>
-      </a>
-    </header>
+    <div>
     
-    <!--
-      Breadcrumbs of parent albums
-    -->
+      <!--
+        Gallery title
+      -->
+      <header style="color: #17baef;">
+        <h1><a href="index.html">Amy&#x27;s Art</a></h1>
+      </header>
     
-    <!--
-      Nested albums
-    -->
-    <ul id="galleries">
-    </ul>
+      <!--
+        Breadcrumbs of parent albums
+      -->
     
-    <!--
-      Render all thumbnails
-    -->
-    <ul id="media">
-        
-          <li data-src="media/large/11351285815_bd9a80bc96_b.jpg"
-              data-sub-html=""
-              data-download-url="media/large/11351285815_bd9a80bc96_b.jpg"
-              
-              data-filename="11351285815_bd9a80bc96_b.jpg"
-        
-            >
-            <a href="media/large/11351285815_bd9a80bc96_b.jpg">
-              <img src="media/thumbs/11351285815_bd9a80bc96_b.jpg"
-                   width="120"
-                   height="120"
-                   alt="11351285815_bd9a80bc96_b.jpg" />
-            </a>
-          </li>    
-          <li data-src="media/large/rabbit-in-grass-.jpg"
-              data-sub-html=""
-              data-download-url="media/large/rabbit-in-grass-.jpg"
-              
-              data-filename="rabbit-in-grass-.jpg"
-        
-            >
-            <a href="media/large/rabbit-in-grass-.jpg">
-              <img src="media/thumbs/rabbit-in-grass-.jpg"
-                   width="120"
-                   height="120"
-                   alt="rabbit-in-grass-.jpg" />
-            </a>
-          </li>    
-          <li data-src="media/large/Oryctolagus_cuniculus_Tasmania_2_(cropped).jpg"
-              data-sub-html=""
-              data-download-url="media/large/Oryctolagus_cuniculus_Tasmania_2_(cropped).jpg"
-              
-              data-filename="Oryctolagus_cuniculus_Tasmania_2_(cropped).jpg"
-        
-            >
-            <a href="media/large/Oryctolagus_cuniculus_Tasmania_2_(cropped).jpg">
-              <img src="media/thumbs/Oryctolagus_cuniculus_Tasmania_2_(cropped).jpg"
-                   width="120"
-                   height="120"
-                   alt="Oryctolagus_cuniculus_Tasmania_2_(cropped).jpg" />
-            </a>
-          </li></ul>
+      <nav class="breadcrumbs">
+        <div class="mask"></div>
+    <a class="breadcrumb-item" href="index.html">Home</a>
+      </nav>
     
-    <!--
-      Pagination
-    -->
+      <!--
+        Main gallery panel
+      -->
+      <section id="content">
     
-    <!--
-      Zip file link
-    -->
+        <!--
+          Nested albums, if any
+        -->
+        <ul id="albums">
+        </ul>
     
+        <!--
+          All photos and videos
+        -->
+        <ul id="media">
+            
+              <li data-src="media/large/11351285815_bd9a80bc96_b.jpg"
+                  data-sub-html=""
+                  data-download-url="media/large/11351285815_bd9a80bc96_b.jpg"
+                  
+                  data-filename="11351285815_bd9a80bc96_b.jpg"
+            
+                >
+                <a href="media/large/11351285815_bd9a80bc96_b.jpg">
+                  <img src="media/thumbs/11351285815_bd9a80bc96_b.jpg"
+                       width="120"
+                       height="120"
+                       alt="11351285815_bd9a80bc96_b.jpg" />
+                </a>
+              </li>        
+              <li data-src="media/large/rabbit-in-grass-.jpg"
+                  data-sub-html=""
+                  data-download-url="media/large/rabbit-in-grass-.jpg"
+                  
+                  data-filename="rabbit-in-grass-.jpg"
+            
+                >
+                <a href="media/large/rabbit-in-grass-.jpg">
+                  <img src="media/thumbs/rabbit-in-grass-.jpg"
+                       width="120"
+                       height="120"
+                       alt="rabbit-in-grass-.jpg" />
+                </a>
+              </li>        
+              <li data-src="media/large/Oryctolagus_cuniculus_Tasmania_2_(cropped).jpg"
+                  data-sub-html=""
+                  data-download-url="media/large/Oryctolagus_cuniculus_Tasmania_2_(cropped).jpg"
+                  
+                  data-filename="Oryctolagus_cuniculus_Tasmania_2_(cropped).jpg"
+            
+                >
+                <a href="media/large/Oryctolagus_cuniculus_Tasmania_2_(cropped).jpg">
+                  <img src="media/thumbs/Oryctolagus_cuniculus_Tasmania_2_(cropped).jpg"
+                       width="120"
+                       height="120"
+                       alt="Oryctolagus_cuniculus_Tasmania_2_(cropped).jpg" />
+                </a>
+              </li>    </ul>
     
-    <!--
-      Optional footer
-    -->
+        <!--
+          Pagination
+        -->
+    
+        <!--
+          Zip file link
+        -->
+    
+      </section>
+    
+      <!--
+        Optional footer
+      -->
+      <footer>
+        <p>Copyright &copy; 2024 to the artist, all rights reserved</p>
+      </footer>
+    
+    </div>
     <!-- Video loader -->
     <div id="videos">
     </div>
