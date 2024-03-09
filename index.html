@@ -6,100 +6,79 @@
       <meta name="viewport" content="width=device-width, user-scalable=no" />
       <title>Amy&#x27;s Art - Home</title>
       <link rel="stylesheet" href="public/lightgallery/css/lightgallery.css" />
-      <link rel="stylesheet" href="public/lightgallery/css/lg-exif.min.css" />
+      <link rel="stylesheet" href="public/lightslider/css/lightslider.min.css" />
       <link rel="stylesheet" href="public/videojs/video-js.min.css" />
+      <link rel="stylesheet" href="public/lightgallery/css/lg-exif.min.css" />
       <link rel="stylesheet" href="public/core.css" />
       <link rel="stylesheet" href="public/theme.css" />
+      <link rel="stylesheet" href="public/justifiedgallery/justifiedGallery.min.css" />
   </head>
 
   <body>
-
-    <div>
+    
+    <div id="container">
     
       <!--
         Gallery title
       -->
-      <header style="color: #17baef;">
+      <header>
         <h1><a href="index.html">Amy&#x27;s Art</a></h1>
       </header>
     
       <!--
         Breadcrumbs of parent albums
       -->
-    
       <nav class="breadcrumbs">
-        <div class="mask"></div>
     <a class="breadcrumb-item" href="index.html">Home</a>
       </nav>
     
+    
       <!--
-        Main gallery panel
+        Nested albums, if any
       -->
-      <section id="content">
+      <div id="albums" class="justified-gallery">
+      </div>
     
-        <!--
-          Nested albums, if any
-        -->
-        <ul id="albums">
-        </ul>
+      <!--
+        All photos and videos
+      -->
+      <ul id="media" class="clearfix justified-gallery">
+          
+          <div class="albumList"
+              data-sub-html=""
+              data-download-url="media/large/11351285815_bd9a80bc96_b.jpg"data-src="media/large/11351285815_bd9a80bc96_b.jpg"data-exthumbimage="media/thumbs/11351285815_bd9a80bc96_b.jpg"data-filename="11351285815_bd9a80bc96_b.jpg"><a href="media/large/11351285815_bd9a80bc96_b.jpg"><img
+                      src="media/small/11351285815_bd9a80bc96_b.jpg"
+                      width="375.09157509157507"
+                      height="300"alt="11351285815_bd9a80bc96_b.jpg"/>
+              </a>
+          
+          </div>      
+          <div class="albumList"
+              data-sub-html=""
+              data-download-url="media/large/rabbit-in-grass-.jpg"data-src="media/large/rabbit-in-grass-.jpg"data-exthumbimage="media/thumbs/rabbit-in-grass-.jpg"data-filename="rabbit-in-grass-.jpg"><a href="media/large/rabbit-in-grass-.jpg"><img
+                      src="media/small/rabbit-in-grass-.jpg"
+                      width="451.16279069767444"
+                      height="300"alt="rabbit-in-grass-.jpg"/>
+              </a>
+          
+          </div>      
+          <div class="albumList"
+              data-sub-html=""
+              data-download-url="media/large/Oryctolagus_cuniculus_Tasmania_2_(cropped).jpg"data-src="media/large/Oryctolagus_cuniculus_Tasmania_2_(cropped).jpg"data-exthumbimage="media/thumbs/Oryctolagus_cuniculus_Tasmania_2_(cropped).jpg"data-filename="Oryctolagus_cuniculus_Tasmania_2_(cropped).jpg"><a href="media/large/Oryctolagus_cuniculus_Tasmania_2_(cropped).jpg"><img
+                      src="media/small/Oryctolagus_cuniculus_Tasmania_2_(cropped).jpg"
+                      width="235.58282208588957"
+                      height="300"alt="Oryctolagus_cuniculus_Tasmania_2_(cropped).jpg"/>
+              </a>
+          
+          </div>  </ul>
     
-        <!--
-          All photos and videos
-        -->
-        <ul id="media">
-            
-              <li data-src="media/large/11351285815_bd9a80bc96_b.jpg"
-                  data-sub-html=""
-                  data-download-url="media/large/11351285815_bd9a80bc96_b.jpg"
-                  
-                  data-filename="11351285815_bd9a80bc96_b.jpg"
-            
-                >
-                <a href="media/large/11351285815_bd9a80bc96_b.jpg">
-                  <img src="media/thumbs/11351285815_bd9a80bc96_b.jpg"
-                       width="120"
-                       height="120"
-                       alt="11351285815_bd9a80bc96_b.jpg" />
-                </a>
-              </li>        
-              <li data-src="media/large/rabbit-in-grass-.jpg"
-                  data-sub-html=""
-                  data-download-url="media/large/rabbit-in-grass-.jpg"
-                  
-                  data-filename="rabbit-in-grass-.jpg"
-            
-                >
-                <a href="media/large/rabbit-in-grass-.jpg">
-                  <img src="media/thumbs/rabbit-in-grass-.jpg"
-                       width="120"
-                       height="120"
-                       alt="rabbit-in-grass-.jpg" />
-                </a>
-              </li>        
-              <li data-src="media/large/Oryctolagus_cuniculus_Tasmania_2_(cropped).jpg"
-                  data-sub-html=""
-                  data-download-url="media/large/Oryctolagus_cuniculus_Tasmania_2_(cropped).jpg"
-                  
-                  data-filename="Oryctolagus_cuniculus_Tasmania_2_(cropped).jpg"
-            
-                >
-                <a href="media/large/Oryctolagus_cuniculus_Tasmania_2_(cropped).jpg">
-                  <img src="media/thumbs/Oryctolagus_cuniculus_Tasmania_2_(cropped).jpg"
-                       width="120"
-                       height="120"
-                       alt="Oryctolagus_cuniculus_Tasmania_2_(cropped).jpg" />
-                </a>
-              </li>    </ul>
+      <!--
+        Pagination
+      -->
     
-        <!--
-          Pagination
-        -->
-    
-        <!--
-          Zip file link
-        -->
-    
-      </section>
+      <!--
+        Zip file link
+      -->
     
       <!--
         Optional footer
@@ -119,11 +98,13 @@
     <script src="public/videojs/video.min.js"></script>
     <!-- LightGallery -->
     <script src="public/lightgallery/js/lightgallery.js"></script>
+    <script src="public/lightslider/js/lightslider.min.js"></script>
     <script src="public/lightgallery/js/lg-autoplay.js"></script>
     <script src="public/lightgallery/js/lg-pager.js"></script>
     <script src="public/lightgallery/js/lg-thumbnail.js"></script>
     <script src="public/lightgallery/js/lg-video.js"></script>
     <script src="public/lightgallery/js/lg-exif.min.js"></script>
+    <script src="public/justifiedgallery/jquery.justifiedGallery.min.js"></script>
 
     <script>
       $(document).ready(function() {
@@ -133,10 +114,52 @@
           loop : false,
           download: true,
           counter: true,
-          videojs: true
+          videojs: true,
+          exThumbImage: 'data-exthumbimage',
+        });
+
+        // Init justified gallery for albums
+        $("#albums").justifiedGallery({
+          margins: 10,
+          rowHeight: 300,
+          maxRowHeight: 325,
+        });
+
+        // Init justified gallery for photos
+        $("#media").justifiedGallery({
+          selector: '.albumList',
+          waitThumbnailsLoad: false,
+          margins: 10,
+          rowHeight: 250,
+          maxRowHeight: 275,
         });
       });
     </script>
+
+      <script id="slider-js" data-interval="">
+        $(document).ready(function () {
+          let waitTime = 1000;
+
+          try {
+            waitTime = parseInt($("#slider-js").data("interval"));
+          } catch (e) {
+            console.error("Invalid speed value for slider: " + waitTime + "\n" + e);
+          }
+
+          $("#lightSlider").lightSlider({
+            auto: true,
+            loop: true,
+            item: 1,
+            gallery: true,
+            pause: waitTime,
+            onSliderLoad: (el) => {
+              el.lightGallery({
+                selector: "#lightSlider li"
+              })
+            }
+          });
+        });
+      </script>
 
 
   </body>
