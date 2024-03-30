@@ -81,3 +81,7 @@
 2024-03-30T17:59:08.431Z thumbsup:warn ffmpeg (https://www.ffmpeg.org) is not installed. You will not be able to process videos.
 2024-03-30T17:59:08.431Z thumbsup:warn gifsicle (http://www.lcdf.org/gifsicle) is not installed. You will not be able to process animated GIFs.
 2024-03-30T17:59:08.431Z thumbsup:warn zip (https://linux.die.net/man/1/zip) is not installed. You will not be able to create ZIP files.
+2024-03-30T19:06:37.364Z thumbsup:warn magick (https://imagemagick.org) is not installed. You will not be able to process HEIC images.
+2024-03-30T19:06:37.365Z thumbsup:warn ffmpeg (https://www.ffmpeg.org) is not installed. You will not be able to process videos.
+2024-03-30T19:06:37.365Z thumbsup:warn gifsicle (http://www.lcdf.org/gifsicle) is not installed. You will not be able to process animated GIFs.
+2024-03-30T19:06:37.365Z thumbsup:warn zip (https://linux.die.net/man/1/zip) is not installed. You will not be able to create ZIP files.
