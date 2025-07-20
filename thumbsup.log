@@ -128,3 +128,7 @@
 2024-05-02T13:35:00.411Z thumbsup:warn ffmpeg (https://www.ffmpeg.org) is not installed. You will not be able to process videos.
 2024-05-02T13:35:00.411Z thumbsup:warn gifsicle (http://www.lcdf.org/gifsicle) is not installed. You will not be able to process animated GIFs.
 2024-05-02T13:35:00.411Z thumbsup:warn zip (https://linux.die.net/man/1/zip) is not installed. You will not be able to create ZIP files.
+2025-07-20T18:21:36.684Z thumbsup:warn dcraw (https://www.cybercom.net/~dcoffin/dcraw/) is not installed. You will not be able to process RAW photos.
+2025-07-20T18:21:36.693Z thumbsup:warn ENOENT: no such file or directory, scandir '/work/amy_pictures'
+2025-07-20T18:27:00.075Z thumbsup:warn dcraw (https://www.cybercom.net/~dcoffin/dcraw/) is not installed. You will not be able to process RAW photos.
+2025-07-20T18:28:31.465Z thumbsup:warn dcraw (https://www.cybercom.net/~dcoffin/dcraw/) is not installed. You will not be able to process RAW photos.
